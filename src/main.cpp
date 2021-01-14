@@ -18,19 +18,18 @@ your project should go here.
 #include <assert.h>
 #include <string>
 using namespace std;
-int get_max_count(string sinput){
-	
-	int count;
+int get_max_count(string* line){
+	int count[256] = {0};
 	int max = 0;
-	char test = sinput[0];
-	for (int x = 0; x < '\0'; x++){
-		if (test = sinput[x]){
-			count = count + 1;
+	int arr = strlen(line);   //makes the array the length of the string
+
+	for (int x = 0; x < arr; x++) {
+		count[str[x]]++;
+		if (max < count[str[x]]) {
+			max = count[str[x]];
 		}
-		if (count > max)
-			max = count;
 	}
-    return max;
+	return max;
 }
 
 int main(int argc, char *argv[]){
