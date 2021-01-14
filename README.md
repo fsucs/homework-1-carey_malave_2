@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Project 1: Most Frequent Char
+=======
+Getting Started testing
+>>>>>>> 0f2148b65d2498ecf1a37b21fe4f8ed4e1983834
 ===============
  you should tell about your overall project works and how can anyone will run your code
 
