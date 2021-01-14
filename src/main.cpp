@@ -20,14 +20,15 @@ your project should go here.
 using namespace std;
 int get_max_count(string sinput){
 	
-	int count[] = {0};
+	int count;
 	int max = 0;
-	char compare = sinput[0];
-	for (int x = 1; x < sinput.length(); x++){
-		if (sinput[x] == compare)
-			max++;
-
-
+	char test = sinput[0];
+	for (int x = 0; x < '\0'; x++){
+		if (test = sinput[x]){
+			count = count + 1;
+		}
+		if (count > max)
+			max = count;
 	}
     return max;
 }
