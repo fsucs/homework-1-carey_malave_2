@@ -1,8 +1,7 @@
 
 /**
-@mainpage COP 3330 Project 1
-
-@author Me and Myself
+COP 3330 Project 1
+Author: Kathryn Carey and Francisco Malave
 
 Here you should tell us about how your project works.  How to run,
 any special things you have, etc.  Also, explain any non-trivial
@@ -12,13 +11,6 @@ also comment on the stability of your code.  Any big bugs should be listed
 here.  Basically, anything that you think we need to know in general about
 your project should go here.
 
-Any additional comments you want to make can go here.  Did you like the
-project?  Was it too hard, too easy?  My TA smells bad.  Well, you get
-the idea.
-
-This initial documentation here should be removed.
-Or else you loose points.
-
 */
 
 #include <iostream>
@@ -27,6 +19,19 @@ Or else you loose points.
 #include <string>
 
 int get_max_count(std::string sinput){
+	
+	int count[] = {0};
+	int max = 0;
+	char compare = sinput[0];
+	for (int x = 1; x < sinput.length(); x++){
+		if (sinput[x] == compare)
+			max++;
+	//	else{
+	//		compare = sinput[x];
+	//	}
+
+
+	}
     return 0;
 }
 
