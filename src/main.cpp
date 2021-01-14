@@ -19,17 +19,25 @@ your project should go here.
 #include <string>
 using namespace std;
 int get_max_count(string sinput){
-	int count[256] = {0};
-	int max = 0;
-	int arr = sinput.size();   //makes the array the length of the string
+	int max = 0; //returns back to main. max number of a repeated character
+	int count[sinput.length()] = {0};
 
-	for (int x = 0; x < arr; x++) {
-		count[sinput[x]]++;
-		if (max < count[sinput[x]]) {
-			max = count[sinput[x]];
-		}
-	}
-	return max;
+	for (int x = 0; x < sinput.length(); x++){
+		if (x == 0)
+			count[x]++;
+		else{
+			int match = 0;
+			for (int y = x; y < x; y++){
+				if (sinput[y] == sinput[x]){
+					count[y]++;
+					match++;
+	        	        } 
+			} 
+ 		} 
+		if (match > 0)
+			count[x]++;
+	} 
+			
 }
 
 int main(int argc, char *argv[]){
