@@ -17,8 +17,8 @@ your project should go here.
 #include <example.hpp>
 #include <assert.h>
 #include <string>
-
-int get_max_count(std::string sinput){
+using namespace std;
+int get_max_count(string sinput){
 	
 	int count[] = {0};
 	int max = 0;
@@ -26,17 +26,14 @@ int get_max_count(std::string sinput){
 	for (int x = 1; x < sinput.length(); x++){
 		if (sinput[x] == compare)
 			max++;
-	//	else{
-	//		compare = sinput[x];
-	//	}
 
 
 	}
-    return 0;
+    return max;
 }
 
 int main(int argc, char *argv[]){
-    using namespace std;
+
     
     if (argc >= 2){
         string test1("c++");
