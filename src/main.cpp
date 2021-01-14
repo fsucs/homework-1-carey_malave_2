@@ -22,7 +22,7 @@ int get_max_count(string sinput){
 	int count[100] = {}; //array of each character's count
 
 	for (int x = 0; x < sinput.size(); x++){
-		if (sinput[x] == 0)//first character receives 1
+		if (x == 0)//first character receives 1
 			count[x]++;
 		else{
 			int match = 0; //to see if the last character receives a count
@@ -36,7 +36,7 @@ int get_max_count(string sinput){
 		if (match > 0) //if the last character does receive a count
 			count[x]++;
 	} 
-	for (int i = 0; i < count.size(); i++){
+	for (int i = 0; i < sinput.length(); i++){
 		if (count[i] > max)
 			max = count[i];
 	}
