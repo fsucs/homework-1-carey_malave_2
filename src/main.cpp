@@ -14,19 +14,19 @@ your project should go here.
 */
 
 #include <iostream>
-#include <example.hpp>
+//#include <example.hpp>
 #include <assert.h>
 #include <string>
 using namespace std;
-int get_max_count(string* line){
+int get_max_count(string sinput){
 	int count[256] = {0};
 	int max = 0;
-	int arr = strlen(line);   //makes the array the length of the string
+	int arr = sinput.size();   //makes the array the length of the string
 
 	for (int x = 0; x < arr; x++) {
-		count[str[x]]++;
-		if (max < count[str[x]]) {
-			max = count[str[x]];
+		count[sinput[x]]++;
+		if (max < count[sinput[x]]) {
+			max = count[sinput[x]];
 		}
 	}
 	return max;
